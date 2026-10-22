@@ -10,21 +10,23 @@ A bilingual, serverless directory of the **top 50 GitHub repositories by stars p
 
 ## 分类 / Categories
 
-- **AI 与机器学习 / AI & Machine Learning** — `topic:machine-learning`
-- **大语言模型 / Large Language Models** — `topic:large-language-models`
-- **开发工具 / Developer Tools** — `topic:developer-tools`
-- **Web 开发 / Web Development** — `topic:web-development`
-- **Android 应用 / Android Apps** — `topic:android`
-- **桌面软件 / Desktop Software** — `topic:desktop-app`
-- **运维与云原生 / DevOps & Cloud** — `topic:devops`
-- **网络安全 / Cybersecurity** — `topic:cybersecurity`
-- **自动化 / Automation** — `topic:automation`
-- **数据科学 / Data Science** — `topic:data-science`
-- **量化与交易 / Quant & Trading** — `topic:algorithmic-trading`
-- **设计与创作 / Design & Creative** — `topic:design-tools`
-- **教育与学习 / Education** — `topic:education`
-- **游戏开发 / Game Development** — `topic:game-development`
-- **自托管软件 / Self-Hosted** — `topic:self-hosted`
+**11 个一级领域 / 63 个细分类 / 每类 Top 50**。
+
+| 一级领域 | Category group |
+|---|---|
+| 人工智能 | Artificial Intelligence |
+| 编程与开发 | Development |
+| 操作系统与应用 | Operating Systems & Apps |
+| 服务器与基础设施 | Infrastructure |
+| 安全与隐私 | Security & Privacy |
+| 自动化与机器人 | Automation & Bots |
+| 数据与数据库 | Data & Databases |
+| 金融与区块链 | Finance & Blockchain |
+| 设计与多媒体 | Design & Media |
+| 教育与科学 | Education & Science |
+| 游戏与娱乐 | Games & Entertainment |
+
+完整细分类及 GitHub 搜索规则：[categories.json](categories.json)。
 
 ## 使用与部署
 
@@ -39,7 +41,7 @@ A bilingual, serverless directory of the **top 50 GitHub repositories by stars p
 
 ## English
 
-OpenSource Atlas is a bilingual directory for discovering GitHub repositories across 15 categories. Each category lists the top 50 repositories matching a defined GitHub Search query, ordered by stars, excluding forks and archived repositories.
+OpenSource Atlas is a bilingual directory for discovering GitHub repositories across 63 categories across 11 groups. Each category lists the top 50 repositories matching a defined GitHub Search query, ordered by stars, excluding forks and archived repositories.
 
 **Deploy:** Manually run the **Refresh top 50 by category** workflow in GitHub Actions; then configure GitHub Pages to publish the `/docs` folder from `main`. Daily refreshes use the repository's built-in `GITHUB_TOKEN`.
 
