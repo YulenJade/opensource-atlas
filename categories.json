@@ -565,5 +565,257 @@
     "group_name": "游戏与娱乐",
     "group_name_en": "Games & Entertainment",
     "query": "topic:media-server"
+  },
+  {
+    "id": "iot",
+    "name": "物联网平台",
+    "name_en": "IoT Platforms",
+    "group": "hardware",
+    "group_name": "硬件与物联网",
+    "group_name_en": "Hardware & IoT",
+    "query": "topic:internet-of-things"
+  },
+  {
+    "id": "embedded",
+    "name": "嵌入式开发",
+    "name_en": "Embedded Systems",
+    "group": "hardware",
+    "group_name": "硬件与物联网",
+    "group_name_en": "Hardware & IoT",
+    "query": "topic:embedded"
+  },
+  {
+    "id": "arduino",
+    "name": "Arduino",
+    "name_en": "Arduino",
+    "group": "hardware",
+    "group_name": "硬件与物联网",
+    "group_name_en": "Hardware & IoT",
+    "query": "topic:arduino"
+  },
+  {
+    "id": "raspberry-pi",
+    "name": "树莓派",
+    "name_en": "Raspberry Pi",
+    "group": "hardware",
+    "group_name": "硬件与物联网",
+    "group_name_en": "Hardware & IoT",
+    "query": "topic:raspberry-pi"
+  },
+  {
+    "id": "robotics",
+    "name": "机器人技术",
+    "name_en": "Robotics",
+    "group": "robotics",
+    "group_name": "机器人与无人机",
+    "group_name_en": "Robotics & Drones",
+    "query": "topic:robotics"
+  },
+  {
+    "id": "ros",
+    "name": "机器人操作系统",
+    "name_en": "Robot Operating System",
+    "group": "robotics",
+    "group_name": "机器人与无人机",
+    "group_name_en": "Robotics & Drones",
+    "query": "topic:ros"
+  },
+  {
+    "id": "drones",
+    "name": "无人机",
+    "name_en": "Drones",
+    "group": "robotics",
+    "group_name": "机器人与无人机",
+    "group_name_en": "Robotics & Drones",
+    "query": "topic:drone"
+  },
+  {
+    "id": "robot-simulation",
+    "name": "机器人仿真",
+    "name_en": "Robot Simulation",
+    "group": "robotics",
+    "group_name": "机器人与无人机",
+    "group_name_en": "Robotics & Drones",
+    "query": "topic:robot-simulation"
+  },
+  {
+    "id": "notes",
+    "name": "笔记与知识管理",
+    "name_en": "Notes & Knowledge",
+    "group": "office",
+    "group_name": "办公与协作",
+    "group_name_en": "Office & Collaboration",
+    "query": "topic:note-taking"
+  },
+  {
+    "id": "office-suites",
+    "name": "办公套件",
+    "name_en": "Office Suites",
+    "group": "office",
+    "group_name": "办公与协作",
+    "group_name_en": "Office & Collaboration",
+    "query": "topic:office-suite"
+  },
+  {
+    "id": "collaboration",
+    "name": "团队协作",
+    "name_en": "Collaboration",
+    "group": "office",
+    "group_name": "办公与协作",
+    "group_name_en": "Office & Collaboration",
+    "query": "topic:collaboration"
+  },
+  {
+    "id": "project-management",
+    "name": "项目管理",
+    "name_en": "Project Management",
+    "group": "office",
+    "group_name": "办公与协作",
+    "group_name_en": "Office & Collaboration",
+    "query": "topic:project-management"
+  },
+  {
+    "id": "messaging",
+    "name": "即时通信",
+    "name_en": "Messaging",
+    "group": "internet",
+    "group_name": "互联网与通信",
+    "group_name_en": "Internet & Communication",
+    "query": "topic:messaging"
+  },
+  {
+    "id": "email",
+    "name": "电子邮件",
+    "name_en": "Email",
+    "group": "internet",
+    "group_name": "互联网与通信",
+    "group_name_en": "Internet & Communication",
+    "query": "topic:email"
+  },
+  {
+    "id": "vpn",
+    "name": "VPN 与网络连接",
+    "name_en": "VPN & Connectivity",
+    "group": "internet",
+    "group_name": "互联网与通信",
+    "group_name_en": "Internet & Communication",
+    "query": "topic:vpn"
+  },
+  {
+    "id": "dns",
+    "name": "DNS 工具",
+    "name_en": "DNS Tools",
+    "group": "internet",
+    "group_name": "互联网与通信",
+    "group_name_en": "Internet & Communication",
+    "query": "topic:dns"
+  },
+  {
+    "id": "healthcare",
+    "name": "医疗软件",
+    "name_en": "Healthcare Software",
+    "group": "health",
+    "group_name": "医疗与健康科技",
+    "group_name_en": "Health & MedTech",
+    "query": "topic:healthcare"
+  },
+  {
+    "id": "medical-imaging",
+    "name": "医学影像",
+    "name_en": "Medical Imaging",
+    "group": "health",
+    "group_name": "医疗与健康科技",
+    "group_name_en": "Health & MedTech",
+    "query": "topic:medical-imaging"
+  },
+  {
+    "id": "fitness",
+    "name": "健身与运动",
+    "name_en": "Fitness",
+    "group": "health",
+    "group_name": "医疗与健康科技",
+    "group_name_en": "Health & MedTech",
+    "query": "topic:fitness"
+  },
+  {
+    "id": "health-data",
+    "name": "健康数据",
+    "name_en": "Health Data",
+    "group": "health",
+    "group_name": "医疗与健康科技",
+    "group_name_en": "Health & MedTech",
+    "query": "topic:health-data"
+  },
+  {
+    "id": "ecommerce",
+    "name": "电子商务",
+    "name_en": "E-commerce",
+    "group": "business",
+    "group_name": "商业与电商",
+    "group_name_en": "Business & Commerce",
+    "query": "topic:ecommerce"
+  },
+  {
+    "id": "crm",
+    "name": "客户关系管理",
+    "name_en": "CRM",
+    "group": "business",
+    "group_name": "商业与电商",
+    "group_name_en": "Business & Commerce",
+    "query": "topic:crm"
+  },
+  {
+    "id": "erp",
+    "name": "企业资源计划",
+    "name_en": "ERP",
+    "group": "business",
+    "group_name": "商业与电商",
+    "group_name_en": "Business & Commerce",
+    "query": "topic:erp"
+  },
+  {
+    "id": "accounting",
+    "name": "会计与财务软件",
+    "name_en": "Accounting",
+    "group": "business",
+    "group_name": "商业与电商",
+    "group_name_en": "Business & Commerce",
+    "query": "topic:accounting"
+  },
+  {
+    "id": "maps",
+    "name": "地图工具",
+    "name_en": "Mapping",
+    "group": "geospatial",
+    "group_name": "交通与地理空间",
+    "group_name_en": "Mobility & Geospatial",
+    "query": "topic:maps"
+  },
+  {
+    "id": "openstreetmap",
+    "name": "开放街图",
+    "name_en": "OpenStreetMap",
+    "group": "geospatial",
+    "group_name": "交通与地理空间",
+    "group_name_en": "Mobility & Geospatial",
+    "query": "topic:openstreetmap"
+  },
+  {
+    "id": "navigation",
+    "name": "导航与路径规划",
+    "name_en": "Navigation & Routing",
+    "group": "geospatial",
+    "group_name": "交通与地理空间",
+    "group_name_en": "Mobility & Geospatial",
+    "query": "topic:routing"
+  },
+  {
+    "id": "autonomous-driving",
+    "name": "自动驾驶",
+    "name_en": "Autonomous Driving",
+    "group": "geospatial",
+    "group_name": "交通与地理空间",
+    "group_name_en": "Mobility & Geospatial",
+    "query": "topic:autonomous-driving"
   }
 ]
