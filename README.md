@@ -2,7 +2,7 @@
 
 **中文** | [English](#english)
 
-**V2.0 已上线：** 高级搜索（语言、许可证、最近活跃）、11 大领域侧边导航、移动端适配、2～4 项目对比、本地收藏和 JSON 导出、深浅色主题，以及采集失败时的缓存保留。无需账号或独立服务器。\n\n一个覆盖各领域的开源项目导航网站。每个分类展示按 GitHub Stars 排序的前 50 个匹配仓库，支持中英双语、搜索、分类和排序。
+**V2.0 已上线：** 高级搜索（语言、许可证、最近活跃）、18 大领域侧边导航、移动端适配、2～4 项目对比、本地收藏和 JSON 导出、深浅色主题，以及采集失败时的缓存保留。无需账号或独立服务器。\n\n一个覆盖各领域的开源项目导航网站。每个分类展示按 GitHub Stars 排序的前 50 个匹配仓库，支持中英双语、搜索、分类和排序。
 
 A bilingual, serverless directory of the **top 50 GitHub repositories by stars per category**.
 
@@ -10,7 +10,7 @@ A bilingual, serverless directory of the **top 50 GitHub repositories by stars p
 
 ## 分类 / Categories
 
-**11 个一级领域 / 63 个细分类 / 每类 Top 50**。
+**11 个一级领域 / 91 个细分类 / 每类 Top 50**。
 
 | 一级领域 | Category group |
 |---|---|
@@ -25,6 +25,13 @@ A bilingual, serverless directory of the **top 50 GitHub repositories by stars p
 | 设计与多媒体 | Design & Media |
 | 教育与科学 | Education & Science |
 | 游戏与娱乐 | Games & Entertainment |
+| 硬件与物联网 | Hardware & IoT |
+| 机器人与无人机 | Robotics & Drones |
+| 办公与协作 | Office & Collaboration |
+| 互联网与通信 | Internet & Communication |
+| 医疗与健康科技 | Health & MedTech |
+| 商业与电商 | Business & Commerce |
+| 交通与地理空间 | Mobility & Geospatial |
 
 完整细分类及 GitHub 搜索规则：[categories.json](categories.json)。
 
@@ -41,7 +48,7 @@ A bilingual, serverless directory of the **top 50 GitHub repositories by stars p
 
 ## English
 
-OpenSource Atlas is a bilingual directory for discovering GitHub repositories across 63 categories across 11 groups. Each category lists the top 50 repositories matching a defined GitHub Search query, ordered by stars, excluding forks and archived repositories.
+OpenSource Atlas is a bilingual directory for discovering GitHub repositories across 91 categories across 18 groups. Each category lists the top 50 repositories matching a defined GitHub Search query, ordered by stars, excluding forks and archived repositories.
 
 **Deploy:** Manually run the **Refresh top 50 by category** workflow in GitHub Actions; then configure GitHub Pages to publish the `/docs` folder from `main`. Daily refreshes use the repository's built-in `GITHUB_TOKEN`.
 
