@@ -2,7 +2,7 @@
 
 **中文** | [English](#english)
 
-一个覆盖各领域的开源项目导航网站。每个分类展示按 GitHub Stars 排序的前 50 个匹配仓库，支持中英双语、搜索、分类和排序。
+**V2.0 已上线：** 高级搜索（语言、许可证、最近活跃）、11 大领域侧边导航、移动端适配、2～4 项目对比、本地收藏和 JSON 导出、深浅色主题，以及采集失败时的缓存保留。无需账号或独立服务器。\n\n一个覆盖各领域的开源项目导航网站。每个分类展示按 GitHub Stars 排序的前 50 个匹配仓库，支持中英双语、搜索、分类和排序。
 
 A bilingual, serverless directory of the **top 50 GitHub repositories by stars per category**.
 
@@ -28,7 +28,7 @@ A bilingual, serverless directory of the **top 50 GitHub repositories by stars p
 
 完整细分类及 GitHub 搜索规则：[categories.json](categories.json)。
 
-## 使用与部署
+## V2.0 功能 / Features\n\n- **高级筛选 / Advanced filters:** 语言、许可证、近 30/90 天活跃、Stars 和最近提交排序。\n- **比较 / Compare:** 最多比较四个项目的 Stars、语言、许可证和最近提交。\n- **收藏 / Favorites:** 保存在当前浏览器 localStorage，支持 JSON 导出；不会跨设备同步。\n- **移动端 / Mobile:** 响应式导航与中英双语界面、深浅色主题。\n- **可靠更新 / Resilient refresh:** API 请求重试，失败分类使用已有缓存；全部失败则保留原始数据并让工作流失败。\n\n## 使用与部署
 
 1. 打开 **Actions → Refresh top 50 by category → Run workflow**，首次抓取排行榜。
 2. 打开 **Settings → Pages → Build and deployment**，选择 **Deploy from a branch**、`main`、`/docs`。
