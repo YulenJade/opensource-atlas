@@ -2,9 +2,33 @@
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0c1428"><title>OpenSource Atlas · 开源星图</title>
 <style>
 :root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color-scheme:dark;background:#0c1428;color:#edf3ff}*{box-sizing:border-box}body{margin:0}button,input,select{font:inherit}button,select,input{border:1px solid #3b5274;background:#182640;color:inherit;border-radius:10px;padding:11px}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #70b9ff;outline-offset:2px}a{color:#9dccff}header{padding:36px 20px;background:linear-gradient(125deg,#213c72,#0c1428)}.wrap{max-width:1180px;margin:auto}h1{margin:0;font-size:clamp(28px,5vw,48px)}.muted,.meta{color:#aebed7}.lead{margin-bottom:0}.layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:22px;padding:24px 16px}.sidebar,.panel,.card{background:#142139;border:1px solid #304566;border-radius:15px}.sidebar{padding:14px;align-self:start;position:sticky;top:12px;max-height:90vh;overflow:auto}.sidebar button{display:block;width:100%;text-align:left;border:0;background:transparent;padding:10px}.sidebar button.active{background:#27456e}.sidebar .group-toggle{display:flex;align-items:center;justify-content:space-between;gap:8px;font-weight:650;margin-top:8px;background:#1d3150;border-radius:9px;padding:12px 10px}.sidebar .group-toggle .chevron{transition:transform .2s ease}.sidebar .group-toggle[aria-expanded="true"] .chevron{transform:rotate(90deg)}.sidebar .subcategories[hidden]{display:none}.sidebar .subcategories{padding:4px 0 6px 12px;border-left:2px solid #34577e;margin-left:9px}.sidebar .subcategories button{font-size:13px;padding:9px 10px}.sidebar .group-toggle.active{background:#315887}.sidebar .group-toggle:hover,.sidebar .subcategories button:hover{background:#28476c}.panel{padding:16px}.controls{display:flex;flex-wrap:wrap;gap:9px}.controls input{flex:2;min-width:200px}.controls select{flex:1;min-width:140px}.filters{display:flex;gap:9px;flex-wrap:wrap;margin-top:10px}.filters select{flex:1;min-width:130px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:13px;margin-top:16px}.card{padding:16px;min-width:0}.card h3{margin:10px 0;font-size:17px;overflow-wrap:anywhere}.card p{color:#bdcbe0;line-height:1.5;font-size:14px;min-height:42px}.card .details{font-size:12px;color:#a6b8d5;line-height:1.8}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.actions button{font-size:12px;padding:7px 9px}.active{border-color:#73b9ff!important}.status{font-size:13px;color:#b7c9e5;margin-top:12px}.pill{display:inline-block;background:#243c5c;padding:3px 7px;border-radius:7px;font-size:12px}.compare{margin-top:12px;padding:12px;border:1px solid #45638d;border-radius:12px;overflow-x:auto}.compare table{border-collapse:collapse;width:100%;min-width:520px}.compare th,.compare td{border-bottom:1px solid #38516e;padding:10px;text-align:left;font-size:13px}.empty{padding:35px;text-align:center;color:#b8c9e4}footer{text-align:center;padding:25px;color:#9fb2cd}#menu{display:none}.count{font-size:12px;color:#9eb2d0}body.light{color-scheme:light;background:#f4f7fc;color:#142139}body.light header{background:linear-gradient(125deg,#dceaff,#f4f7fc)}body.light .sidebar,body.light .panel,body.light .card{background:white;border-color:#d5dfed}body.light input,body.light select,body.light button{background:#f4f7fc;color:#17243d;border-color:#b8c8df}body.light .card p,body.light .muted,body.light .meta,body.light .card .details,body.light .status{color:#475569}body.light .sidebar button{background:transparent}body.light .sidebar button.active{background:#dceaff}body.light .sidebar .group-toggle{background:#e9f0fa}body.light .sidebar .group-toggle.active{background:#cce0ff}body.light .sidebar .subcategories{border-left-color:#bed2eb}body.light .pill{background:#e5eefb}@media(max-width:780px){.layout{display:block;padding:12px}.sidebar{display:none;position:static;max-height:320px;margin-bottom:12px}.sidebar.open{display:block}#menu{display:inline-block}.controls input{flex-basis:100%}.grid{grid-template-columns:1fr}header{padding:25px 16px}}
+
+/* Interactive cosmic navigator */
+.cosmos{position:relative;overflow:hidden;isolation:isolate;min-height:360px;border:1px solid #385781;border-radius:18px;margin-bottom:18px;background:radial-gradient(ellipse at 50% 40%,#1d2e61 0%,#101b3b 46%,#070d21 100%);box-shadow:inset 0 0 90px #060b21,0 14px 38px #0003}
+.cosmos::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.7;background-image:radial-gradient(1px 1px at 9% 14%,#fff 98%,transparent),radial-gradient(2px 2px at 72% 28%,#b4d5ff 98%,transparent),radial-gradient(1px 1px at 42% 80%,#fff 98%,transparent),radial-gradient(1px 1px at 85% 78%,#fff 98%,transparent),radial-gradient(1px 1px at 25% 57%,#b8caff 98%,transparent);background-size:137px 109px,211px 173px,177px 163px,251px 233px,101px 137px;animation:star-drift 35s linear infinite}
+.cosmos-head{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:15px 18px}.cosmos-head h2{font-size:17px;margin:0;color:#e8f4ff}.cosmos-head p{font-size:12px;color:#b4c8e8;margin:5px 0 0}.cosmos-head button{font-size:12px;padding:8px 11px;background:#1b3159cc;color:#e8f4ff;border-color:#57719e}
+.cosmos-field{position:relative;z-index:1;min-height:292px;padding:14px 20px 25px;display:grid;grid-template-columns:repeat(auto-fit,minmax(128px,1fr));align-items:center;justify-items:center;gap:18px}
+.galaxy,.sector,.project-star{appearance:none;border:0;background:none;color:#eef5ff;cursor:pointer;position:relative;display:flex;align-items:center;flex-direction:column;gap:10px;text-align:center;padding:10px;min-width:0;width:100%;transition:transform .25s,filter .25s}
+.galaxy:hover,.sector:hover,.project-star:hover,.galaxy:focus-visible,.sector:focus-visible,.project-star:focus-visible{transform:translateY(-6px) scale(1.07);filter:brightness(1.3);outline:none}
+.galaxy-core{width:64px;height:64px;border-radius:50%;position:relative;display:grid;place-items:center;background:radial-gradient(circle at 35% 35%,#fff,#b4d8ff 12%,var(--glow) 29%,#1d3168 54%,transparent 70%);box-shadow:0 0 25px var(--glow),0 0 52px #467bff55;animation:galaxy-pulse 4s ease-in-out infinite alternate;animation-delay:var(--delay)}
+.galaxy-core::after{content:"";position:absolute;width:96px;height:35px;border:2px solid var(--glow);border-radius:50%;transform:rotate(-30deg);box-shadow:0 0 12px var(--glow);opacity:.8}
+.galaxy-core span{font-size:20px;z-index:1;filter:drop-shadow(0 0 4px #fff)}
+.cosmos-label{font-size:13px;font-weight:650;max-width:155px;line-height:1.4;overflow-wrap:anywhere;text-shadow:0 2px 8px #020817}
+.cosmos-count{font-size:11px;color:#bbcef0}
+.sector .galaxy-core{width:49px;height:49px;background:radial-gradient(circle,#fff 2%,#b7d8ff 18%,var(--glow) 38%,transparent 74%);box-shadow:0 0 20px var(--glow)}
+.sector .galaxy-core::after{width:73px;height:25px;opacity:.5}
+.project-star .galaxy-core{width:25px;height:25px;background:radial-gradient(circle,#fff,#a5caff 30%,var(--glow) 55%,transparent 78%);box-shadow:0 0 15px var(--glow)}
+.project-star .galaxy-core::after{display:none}
+.cosmos-field.projects{grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}
+.cosmos-field.projects .cosmos-label{font-size:11px}
+.cosmos-field.projects .project-star{min-height:85px}
+.cosmos-hint{position:relative;z-index:1;color:#a6bce0;font-size:12px;text-align:center;padding:0 12px 14px}
+@keyframes galaxy-pulse{from{filter:brightness(.85);transform:scale(.96) rotate(-3deg)}to{filter:brightness(1.25);transform:scale(1.06) rotate(3deg)}}@keyframes star-drift{to{background-position:137px 109px,-211px 173px,177px -163px,251px 233px,-101px 137px}}
+@media(max-width:780px){.cosmos{min-height:310px}.cosmos-field{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;padding:10px 6px 20px}.galaxy-core{width:48px;height:48px}.galaxy-core::after{width:70px;height:25px}.cosmos-label{font-size:11px}.cosmos-count{font-size:10px}.cosmos-field.projects{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(prefers-reduced-motion:reduce){.cosmos::before,.galaxy-core{animation:none}.galaxy,.sector,.project-star{transition:none}}
 </style></head><body>
 <header><div class="wrap"><h1>🌌 OpenSource Atlas</h1><p id="subtitle" class="lead"></p></div></header>
-<div class="wrap layout"><nav id="sidebar" class="sidebar" aria-label="Categories"></nav><main><section class="panel">
+<div class="wrap layout"><nav id="sidebar" class="sidebar" aria-label="Categories"></nav><main><section id="cosmos" class="cosmos" aria-label="Interactive star map"><div class="cosmos-head"><div><h2 id="cosmos-title"></h2><p id="cosmos-subtitle"></p></div><button id="cosmos-back" type="button" hidden></button></div><div id="cosmos-field" class="cosmos-field"></div><div id="cosmos-hint" class="cosmos-hint"></div></section><section class="panel">
 <div class="controls"><button id="menu" type="button">☰</button><input id="search" type="search" autocomplete="off" aria-label="Search"><button id="lang" type="button">English</button><button id="theme" type="button">☀</button></div>
 <div class="filters"><select id="category" aria-label="Category"></select><select id="language" aria-label="Programming language"></select><select id="license" aria-label="License"></select><select id="activity" aria-label="Recent activity"></select><select id="sort" aria-label="Sort"></select></div>
 <div class="filters"><button id="saved" type="button"></button><button id="export" type="button"></button><button id="clear" type="button"></button></div>
@@ -19,12 +43,12 @@ en:{subtitle:'Explore 91 top-50 rankings across 18 open-source domains',search:'
 const $=id=>document.getElementById(id);
 const escapeHtml=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key))??fallback}catch{return fallback}};
-let lang=read('atlas-lang','zh'),theme=read('atlas-theme','dark'),favorites=new Set(read('atlas-favorites',[])),selected=new Set(),savedOnly=false,cat='',activeGroup='',expandedGroups=new Set(),data={categories:[]},error='';
+let cosmosLevel='galaxies',cosmosGroup='',cosmosCategory='';let lang=read('atlas-lang','zh'),theme=read('atlas-theme','dark'),favorites=new Set(read('atlas-favorites',[])),selected=new Set(),savedOnly=false,cat='',activeGroup='',expandedGroups=new Set(),data={categories:[]},error='';
 const store=(key,value)=>{try{localStorage.setItem(key,JSON.stringify(value))}catch{}};
 function options(el,entries,current){el.innerHTML=entries.map(([value,label])=>'<option value="'+escapeHtml(value)+'">'+escapeHtml(label)+'</option>').join('');el.value=current;if(el.value!==current)el.selectedIndex=0}
 function groups(){const map=new Map();for(const c of data.categories){const key=c.group||'other';if(!map.has(key))map.set(key,[]);map.get(key).push(c)}return [...map.values()]}
-function setCategory(id){cat=id;if(id){const found=data.categories.find(c=>c.id===id);if(found){activeGroup=found.group||'other';expandedGroups.add(activeGroup)}}else activeGroup='';$('category').value=id;draw();if(window.innerWidth<=780)$('sidebar').classList.remove('open')}
-function setGroup(id){activeGroup=activeGroup===id?'':id;cat='';if(activeGroup)expandedGroups.add(activeGroup);draw()}
+function setCategory(id){cat=id;if(id){cosmosCategory=id;cosmosLevel='projects';}if(id){const found=data.categories.find(c=>c.id===id);if(found){activeGroup=found.group||'other';expandedGroups.add(activeGroup)}}else activeGroup='';$('category').value=id;draw();if(window.innerWidth<=780)$('sidebar').classList.remove('open')}
+function setGroup(id){if(id){cosmosGroup=id;cosmosLevel='sectors';}else{cosmosLevel='galaxies';}activeGroup=activeGroup===id?'':id;cat='';if(activeGroup)expandedGroups.add(activeGroup);draw()}
 function toggleGroup(id){if(expandedGroups.has(id))expandedGroups.delete(id);else expandedGroups.add(id);draw()}
 function buildFilters(){const t=TXT[lang];const cats=[[ '',t.all ]];for(const g of groups())for(const c of g)cats.push([c.id,(lang==='zh'?c.group_name:c.group_name_en)+' / '+(lang==='zh'?c.name:c.name_en)]);options($('category'),cats,cat);
 const repos=data.categories.flatMap(c=>c.repositories||[]),languages=[...new Set(repos.map(r=>r.language).filter(Boolean))].sort(),licenses=[...new Set(repos.map(r=>r.license).filter(Boolean))].sort();
@@ -33,8 +57,43 @@ options($('activity'),[['',t.allActivity],['30',t.active30],['90',t.active90]],$
 options($('sort'),[['rank',t.rank],['stars',t.stars],['recent',t.recent],['name',t.name]],$('sort').value||'rank');
 $('sidebar').innerHTML='<button type="button" data-cat="" class="'+(!cat&&!activeGroup?'active':'')+'">'+t.top+'</button>'+groups().map(g=>{const id=g[0].group||'other',open=expandedGroups.has(id),label=lang==='zh'?g[0].group_name:g[0].group_name_en;return '<button type="button" class="group-toggle '+(activeGroup===id?'active':'')+'" data-group="'+escapeHtml(id)+'" aria-expanded="'+open+'" aria-controls="sub-'+escapeHtml(id)+'"><span>'+escapeHtml(label)+' <span class="count">('+g.length+')</span></span><span class="chevron" aria-hidden="true">❯</span></button><div id="sub-'+escapeHtml(id)+'" class="subcategories" '+(open?'':'hidden')+'>'+g.map(c=>'<button type="button" data-cat="'+escapeHtml(c.id)+'" class="'+(cat===c.id?'active':'')+'">'+escapeHtml(lang==='zh'?c.name:c.name_en)+'</button>').join('')+'</div>'}).join('');
 }
+
+function cosmicLabel(zh,en){return lang==='zh'?zh:en}
+function renderCosmos(){
+const gs=groups(),title=$('cosmos-title'),subtitle=$('cosmos-subtitle'),field=$('cosmos-field'),back=$('cosmos-back'),hint=$('cosmos-hint');
+const palette=['#6bbcff','#b28dff','#7af1e3','#ffafcf','#ffd48a','#8dafff','#86e6a4','#e7a1ff'];
+let items=[];
+if(cosmosLevel==='galaxies'){
+title.textContent=cosmicLabel('宇宙星图 · 探索星系','Cosmic Atlas · Explore galaxies');
+subtitle.textContent=cosmicLabel('一级分类 = 星系 · 点击进入','Level 1 = Galaxy · Tap to explore');
+items=gs.map((g,i)=>({kind:'galaxy',id:g[0].group,name:lang==='zh'?g[0].group_name:g[0].group_name_en,count:g.length,glow:palette[i%palette.length],icon:'✦'}));
+}else if(cosmosLevel==='sectors'){
+const g=gs.find(g=>g[0].group===cosmosGroup)||[];
+title.textContent=(g[0]?(lang==='zh'?g[0].group_name:g[0].group_name_en):'')+' · '+cosmicLabel('星系','Galaxy');
+subtitle.textContent=cosmicLabel('二级分类 = 星域 · 点击进入星域','Level 2 = Star sector · Tap to explore');
+items=g.map((c,i)=>({kind:'sector',id:c.id,name:lang==='zh'?c.name:c.name_en,count:(c.repositories||[]).length,glow:palette[i%palette.length],icon:'✧'}));
+}else{
+const c=data.categories.find(c=>c.id===cosmosCategory);
+title.textContent=(c?(lang==='zh'?c.name:c.name_en):'')+' · '+cosmicLabel('星域','Star sector');
+subtitle.textContent=cosmicLabel('项目 = 恒星 · 点击星星打开 GitHub','Projects = Stars · Tap to open on GitHub');
+items=(c?.repositories||[]).slice(0,50).map((r,i)=>({kind:'project-star',id:r.url,name:r.name.split('/').pop(),count:'★ '+Number(r.stars||0).toLocaleString(),glow:palette[i%palette.length],icon:'✦'}));
+}
+back.hidden=cosmosLevel==='galaxies';back.textContent=cosmicLabel('← 返回上一级','← Back');
+field.classList.toggle('projects',cosmosLevel==='projects');
+field.innerHTML=items.map((item,i)=>'<button type="button" class="'+item.kind+'" data-cosmic-kind="'+item.kind+'" data-cosmic-id="'+escapeHtml(item.id)+'" style="--glow:'+item.glow+';--delay:'+(i%7*-0.4)+'s" aria-label="'+escapeHtml(item.name)+'"><span class="galaxy-core"><span>'+item.icon+'</span></span><span class="cosmos-label">'+escapeHtml(item.name)+'</span><span class="cosmos-count">'+escapeHtml(item.count)+'</span></button>').join('')||'<p class="empty">'+cosmicLabel('等待排行榜数据更新','Awaiting ranking data')+'</p>';
+hint.textContent=cosmicLabel('点击星系 → 星域 → 项目，探索开源宇宙','Galaxy → Sector → Repository: explore the open-source universe');
+}
+$('cosmos-field').addEventListener('click',e=>{
+const b=e.target.closest('[data-cosmic-kind]');if(!b)return;
+const kind=b.dataset.cosmicKind,id=b.dataset.cosmicId;
+if(kind==='galaxy'){cosmosGroup=id;cosmosLevel='sectors';setGroup(id);activeGroup=id;renderCosmos()}
+else if(kind==='sector'){cosmosCategory=id;cosmosLevel='projects';setCategory(id)}
+else if(kind==='project-star'&&/^https:\/\/github\.com\//.test(id))window.open(id,'_blank','noopener,noreferrer');
+});
+$('cosmos-back').onclick=()=>{if(cosmosLevel==='projects'){cosmosLevel='sectors';cat='';activeGroup=cosmosGroup;draw()}else{cosmosLevel='galaxies';activeGroup='';cat='';draw()}};
+
 function rowsAll(){return data.categories.flatMap(c=>(c.repositories||[]).map(r=>({...r,categoryId:c.id,categoryLabel:lang==='zh'?c.name:c.name_en})))}
-function draw(){const t=TXT[lang];document.documentElement.lang=lang==='zh'?'zh-CN':'en';document.body.classList.toggle('light',theme==='light');$('subtitle').textContent=t.subtitle;$('search').placeholder=t.search;$('lang').textContent=lang==='zh'?'English':'中文';$('theme').textContent=theme==='dark'?'☀':'☾';$('saved').textContent=savedOnly?t.savedOnly:t.savedOff;$('saved').classList.toggle('active',savedOnly);$('export').textContent=t.export;$('clear').textContent=t.clear;buildFilters();
+function draw(){const t=TXT[lang];document.documentElement.lang=lang==='zh'?'zh-CN':'en';document.body.classList.toggle('light',theme==='light');$('subtitle').textContent=t.subtitle;$('search').placeholder=t.search;$('lang').textContent=lang==='zh'?'English':'中文';$('theme').textContent=theme==='dark'?'☀':'☾';$('saved').textContent=savedOnly?t.savedOnly:t.savedOff;$('saved').classList.toggle('active',savedOnly);$('export').textContent=t.export;$('clear').textContent=t.clear;buildFilters();renderCosmos();
 const query=$('search').value.toLocaleLowerCase().trim(),language=$('language').value,license=$('license').value,days=Number($('activity').value||0),sort=$('sort').value;
 let rows=rowsAll().filter(r=>(!cat||r.categoryId===cat)&&(!activeGroup||data.categories.some(c=>c.id===r.categoryId&&c.group===activeGroup))&&(!savedOnly||favorites.has(r.name))&&(!language||r.language===language)&&(!license||r.license===license)&&(!days||Date.now()-Date.parse(r.updated_at||0)<=days*86400000)&&(!query||[r.name,r.description,r.language,r.license,r.categoryLabel,...(r.topics||[])].join(' ').toLocaleLowerCase().includes(query)));
 if(sort==='stars')rows.sort((a,b)=>b.stars-a.stars);else if(sort==='recent')rows.sort((a,b)=>(b.updated_at||'').localeCompare(a.updated_at||''));else if(sort==='name')rows.sort((a,b)=>a.name.localeCompare(b.name));
