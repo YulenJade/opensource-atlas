@@ -1,92 +1,569 @@
 [
   {
-    "id": "ai",
-    "name": "AI 与机器学习",
-    "name_en": "AI & Machine Learning",
-    "query": "topic:machine-learning"
-  },
-  {
     "id": "llm",
     "name": "大语言模型",
     "name_en": "Large Language Models",
+    "group": "ai",
+    "group_name": "人工智能",
+    "group_name_en": "Artificial Intelligence",
     "query": "topic:large-language-models"
+  },
+  {
+    "id": "agents",
+    "name": "AI 智能体",
+    "name_en": "AI Agents",
+    "group": "ai",
+    "group_name": "人工智能",
+    "group_name_en": "Artificial Intelligence",
+    "query": "topic:ai-agents"
+  },
+  {
+    "id": "rag",
+    "name": "检索增强生成",
+    "name_en": "RAG",
+    "group": "ai",
+    "group_name": "人工智能",
+    "group_name_en": "Artificial Intelligence",
+    "query": "topic:rag"
+  },
+  {
+    "id": "ml",
+    "name": "机器学习",
+    "name_en": "Machine Learning",
+    "group": "ai",
+    "group_name": "人工智能",
+    "group_name_en": "Artificial Intelligence",
+    "query": "topic:machine-learning"
+  },
+  {
+    "id": "deep-learning",
+    "name": "深度学习",
+    "name_en": "Deep Learning",
+    "group": "ai",
+    "group_name": "人工智能",
+    "group_name_en": "Artificial Intelligence",
+    "query": "topic:deep-learning"
+  },
+  {
+    "id": "computer-vision",
+    "name": "计算机视觉",
+    "name_en": "Computer Vision",
+    "group": "ai",
+    "group_name": "人工智能",
+    "group_name_en": "Artificial Intelligence",
+    "query": "topic:computer-vision"
+  },
+  {
+    "id": "speech",
+    "name": "语音识别与合成",
+    "name_en": "Speech AI",
+    "group": "ai",
+    "group_name": "人工智能",
+    "group_name_en": "Artificial Intelligence",
+    "query": "topic:speech-recognition"
+  },
+  {
+    "id": "image-generation",
+    "name": "图像生成",
+    "name_en": "Image Generation",
+    "group": "ai",
+    "group_name": "人工智能",
+    "group_name_en": "Artificial Intelligence",
+    "query": "topic:stable-diffusion"
   },
   {
     "id": "devtools",
     "name": "开发工具",
     "name_en": "Developer Tools",
+    "group": "development",
+    "group_name": "编程与开发",
+    "group_name_en": "Development",
     "query": "topic:developer-tools"
+  },
+  {
+    "id": "editors",
+    "name": "代码编辑器",
+    "name_en": "Code Editors",
+    "group": "development",
+    "group_name": "编程与开发",
+    "group_name_en": "Development",
+    "query": "topic:code-editor"
   },
   {
     "id": "web",
     "name": "Web 开发",
     "name_en": "Web Development",
+    "group": "development",
+    "group_name": "编程与开发",
+    "group_name_en": "Development",
     "query": "topic:web-development"
+  },
+  {
+    "id": "frontend",
+    "name": "前端框架",
+    "name_en": "Frontend Frameworks",
+    "group": "development",
+    "group_name": "编程与开发",
+    "group_name_en": "Development",
+    "query": "topic:frontend-framework"
+  },
+  {
+    "id": "backend",
+    "name": "后端框架",
+    "name_en": "Backend Frameworks",
+    "group": "development",
+    "group_name": "编程与开发",
+    "group_name_en": "Development",
+    "query": "topic:backend-framework"
+  },
+  {
+    "id": "mobile",
+    "name": "移动开发",
+    "name_en": "Mobile Development",
+    "group": "development",
+    "group_name": "编程与开发",
+    "group_name_en": "Development",
+    "query": "topic:mobile-development"
+  },
+  {
+    "id": "cli",
+    "name": "命令行工具",
+    "name_en": "CLI Tools",
+    "group": "development",
+    "group_name": "编程与开发",
+    "group_name_en": "Development",
+    "query": "topic:cli"
+  },
+  {
+    "id": "testing",
+    "name": "测试与质量",
+    "name_en": "Testing",
+    "group": "development",
+    "group_name": "编程与开发",
+    "group_name_en": "Development",
+    "query": "topic:testing"
   },
   {
     "id": "android",
     "name": "Android 应用",
     "name_en": "Android Apps",
-    "query": "topic:android"
+    "group": "apps",
+    "group_name": "操作系统与应用",
+    "group_name_en": "Operating Systems & Apps",
+    "query": "topic:android-app"
   },
   {
-    "id": "desktop",
-    "name": "桌面软件",
-    "name_en": "Desktop Software",
-    "query": "topic:desktop-app"
+    "id": "ios",
+    "name": "iOS 应用",
+    "name_en": "iOS Apps",
+    "group": "apps",
+    "group_name": "操作系统与应用",
+    "group_name_en": "Operating Systems & Apps",
+    "query": "topic:ios-app"
+  },
+  {
+    "id": "macos",
+    "name": "macOS 应用",
+    "name_en": "macOS Apps",
+    "group": "apps",
+    "group_name": "操作系统与应用",
+    "group_name_en": "Operating Systems & Apps",
+    "query": "topic:macos-app"
+  },
+  {
+    "id": "windows",
+    "name": "Windows 应用",
+    "name_en": "Windows Apps",
+    "group": "apps",
+    "group_name": "操作系统与应用",
+    "group_name_en": "Operating Systems & Apps",
+    "query": "topic:windows-app"
+  },
+  {
+    "id": "linux",
+    "name": "Linux 应用",
+    "name_en": "Linux Apps",
+    "group": "apps",
+    "group_name": "操作系统与应用",
+    "group_name_en": "Operating Systems & Apps",
+    "query": "topic:linux-app"
+  },
+  {
+    "id": "browser",
+    "name": "浏览器与扩展",
+    "name_en": "Browsers & Extensions",
+    "group": "apps",
+    "group_name": "操作系统与应用",
+    "group_name_en": "Operating Systems & Apps",
+    "query": "topic:browser-extension"
+  },
+  {
+    "id": "productivity",
+    "name": "效率工具",
+    "name_en": "Productivity",
+    "group": "apps",
+    "group_name": "操作系统与应用",
+    "group_name_en": "Operating Systems & Apps",
+    "query": "topic:productivity"
   },
   {
     "id": "devops",
-    "name": "运维与云原生",
-    "name_en": "DevOps & Cloud",
+    "name": "DevOps",
+    "name_en": "DevOps",
+    "group": "infrastructure",
+    "group_name": "服务器与基础设施",
+    "group_name_en": "Infrastructure",
     "query": "topic:devops"
   },
   {
-    "id": "security",
-    "name": "网络安全",
-    "name_en": "Cybersecurity",
-    "query": "topic:cybersecurity"
+    "id": "containers",
+    "name": "容器与 Docker",
+    "name_en": "Containers & Docker",
+    "group": "infrastructure",
+    "group_name": "服务器与基础设施",
+    "group_name_en": "Infrastructure",
+    "query": "topic:docker"
   },
   {
-    "id": "automation",
-    "name": "自动化",
-    "name_en": "Automation",
-    "query": "topic:automation"
+    "id": "kubernetes",
+    "name": "Kubernetes",
+    "name_en": "Kubernetes",
+    "group": "infrastructure",
+    "group_name": "服务器与基础设施",
+    "group_name_en": "Infrastructure",
+    "query": "topic:kubernetes"
   },
   {
-    "id": "datascience",
-    "name": "数据科学",
-    "name_en": "Data Science",
-    "query": "topic:data-science"
-  },
-  {
-    "id": "quant",
-    "name": "量化与交易",
-    "name_en": "Quant & Trading",
-    "query": "topic:algorithmic-trading"
-  },
-  {
-    "id": "design",
-    "name": "设计与创作",
-    "name_en": "Design & Creative",
-    "query": "topic:design-tools"
-  },
-  {
-    "id": "education",
-    "name": "教育与学习",
-    "name_en": "Education",
-    "query": "topic:education"
-  },
-  {
-    "id": "gamedev",
-    "name": "游戏开发",
-    "name_en": "Game Development",
-    "query": "topic:game-development"
+    "id": "monitoring",
+    "name": "系统监控",
+    "name_en": "Observability",
+    "group": "infrastructure",
+    "group_name": "服务器与基础设施",
+    "group_name_en": "Infrastructure",
+    "query": "topic:monitoring"
   },
   {
     "id": "selfhosted",
     "name": "自托管软件",
     "name_en": "Self-Hosted",
+    "group": "infrastructure",
+    "group_name": "服务器与基础设施",
+    "group_name_en": "Infrastructure",
     "query": "topic:self-hosted"
+  },
+  {
+    "id": "homelab",
+    "name": "家庭实验室",
+    "name_en": "Homelab",
+    "group": "infrastructure",
+    "group_name": "服务器与基础设施",
+    "group_name_en": "Infrastructure",
+    "query": "topic:homelab"
+  },
+  {
+    "id": "networking",
+    "name": "网络工具",
+    "name_en": "Networking",
+    "group": "infrastructure",
+    "group_name": "服务器与基础设施",
+    "group_name_en": "Infrastructure",
+    "query": "topic:networking"
+  },
+  {
+    "id": "cybersecurity",
+    "name": "网络安全",
+    "name_en": "Cybersecurity",
+    "group": "security",
+    "group_name": "安全与隐私",
+    "group_name_en": "Security & Privacy",
+    "query": "topic:cybersecurity"
+  },
+  {
+    "id": "pentesting",
+    "name": "渗透测试",
+    "name_en": "Penetration Testing",
+    "group": "security",
+    "group_name": "安全与隐私",
+    "group_name_en": "Security & Privacy",
+    "query": "topic:penetration-testing"
+  },
+  {
+    "id": "privacy",
+    "name": "隐私保护",
+    "name_en": "Privacy",
+    "group": "security",
+    "group_name": "安全与隐私",
+    "group_name_en": "Security & Privacy",
+    "query": "topic:privacy"
+  },
+  {
+    "id": "cryptography",
+    "name": "密码学",
+    "name_en": "Cryptography",
+    "group": "security",
+    "group_name": "安全与隐私",
+    "group_name_en": "Security & Privacy",
+    "query": "topic:cryptography"
+  },
+  {
+    "id": "password",
+    "name": "密码管理器",
+    "name_en": "Password Managers",
+    "group": "security",
+    "group_name": "安全与隐私",
+    "group_name_en": "Security & Privacy",
+    "query": "topic:password-manager"
+  },
+  {
+    "id": "automation",
+    "name": "工作流自动化",
+    "name_en": "Workflow Automation",
+    "group": "automation",
+    "group_name": "自动化与机器人",
+    "group_name_en": "Automation & Bots",
+    "query": "topic:workflow-automation"
+  },
+  {
+    "id": "bots",
+    "name": "机器人框架",
+    "name_en": "Bot Frameworks",
+    "group": "automation",
+    "group_name": "自动化与机器人",
+    "group_name_en": "Automation & Bots",
+    "query": "topic:bot-framework"
+  },
+  {
+    "id": "scraping",
+    "name": "网页采集",
+    "name_en": "Web Scraping",
+    "group": "automation",
+    "group_name": "自动化与机器人",
+    "group_name_en": "Automation & Bots",
+    "query": "topic:web-scraping"
+  },
+  {
+    "id": "rpa",
+    "name": "流程自动化",
+    "name_en": "RPA",
+    "group": "automation",
+    "group_name": "自动化与机器人",
+    "group_name_en": "Automation & Bots",
+    "query": "topic:rpa"
+  },
+  {
+    "id": "datascience",
+    "name": "数据科学",
+    "name_en": "Data Science",
+    "group": "data",
+    "group_name": "数据与数据库",
+    "group_name_en": "Data & Databases",
+    "query": "topic:data-science"
+  },
+  {
+    "id": "databases",
+    "name": "数据库",
+    "name_en": "Databases",
+    "group": "data",
+    "group_name": "数据与数据库",
+    "group_name_en": "Data & Databases",
+    "query": "topic:database"
+  },
+  {
+    "id": "analytics",
+    "name": "数据分析",
+    "name_en": "Analytics",
+    "group": "data",
+    "group_name": "数据与数据库",
+    "group_name_en": "Data & Databases",
+    "query": "topic:data-analysis"
+  },
+  {
+    "id": "visualization",
+    "name": "数据可视化",
+    "name_en": "Visualization",
+    "group": "data",
+    "group_name": "数据与数据库",
+    "group_name_en": "Data & Databases",
+    "query": "topic:data-visualization"
+  },
+  {
+    "id": "bigdata",
+    "name": "大数据",
+    "name_en": "Big Data",
+    "group": "data",
+    "group_name": "数据与数据库",
+    "group_name_en": "Data & Databases",
+    "query": "topic:big-data"
+  },
+  {
+    "id": "quant",
+    "name": "量化交易",
+    "name_en": "Algorithmic Trading",
+    "group": "finance",
+    "group_name": "金融与区块链",
+    "group_name_en": "Finance & Blockchain",
+    "query": "topic:algorithmic-trading"
+  },
+  {
+    "id": "crypto",
+    "name": "加密货币",
+    "name_en": "Cryptocurrency",
+    "group": "finance",
+    "group_name": "金融与区块链",
+    "group_name_en": "Finance & Blockchain",
+    "query": "topic:cryptocurrency"
+  },
+  {
+    "id": "blockchain",
+    "name": "区块链",
+    "name_en": "Blockchain",
+    "group": "finance",
+    "group_name": "金融与区块链",
+    "group_name_en": "Finance & Blockchain",
+    "query": "topic:blockchain"
+  },
+  {
+    "id": "defi",
+    "name": "去中心化金融",
+    "name_en": "DeFi",
+    "group": "finance",
+    "group_name": "金融与区块链",
+    "group_name_en": "Finance & Blockchain",
+    "query": "topic:defi"
+  },
+  {
+    "id": "trading-bots",
+    "name": "交易机器人",
+    "name_en": "Trading Bots",
+    "group": "finance",
+    "group_name": "金融与区块链",
+    "group_name_en": "Finance & Blockchain",
+    "query": "topic:trading-bot"
+  },
+  {
+    "id": "design",
+    "name": "设计工具",
+    "name_en": "Design Tools",
+    "group": "creative",
+    "group_name": "设计与多媒体",
+    "group_name_en": "Design & Media",
+    "query": "topic:design-tools"
+  },
+  {
+    "id": "graphics",
+    "name": "图形编辑",
+    "name_en": "Graphics",
+    "group": "creative",
+    "group_name": "设计与多媒体",
+    "group_name_en": "Design & Media",
+    "query": "topic:graphics"
+  },
+  {
+    "id": "3d",
+    "name": "3D 建模",
+    "name_en": "3D Modeling",
+    "group": "creative",
+    "group_name": "设计与多媒体",
+    "group_name_en": "Design & Media",
+    "query": "topic:3d-modeling"
+  },
+  {
+    "id": "video",
+    "name": "视频处理",
+    "name_en": "Video Editing",
+    "group": "creative",
+    "group_name": "设计与多媒体",
+    "group_name_en": "Design & Media",
+    "query": "topic:video-editing"
+  },
+  {
+    "id": "audio",
+    "name": "音频处理",
+    "name_en": "Audio",
+    "group": "creative",
+    "group_name": "设计与多媒体",
+    "group_name_en": "Design & Media",
+    "query": "topic:audio-processing"
+  },
+  {
+    "id": "education",
+    "name": "教育资源",
+    "name_en": "Education",
+    "group": "learning",
+    "group_name": "教育与科学",
+    "group_name_en": "Education & Science",
+    "query": "topic:education"
+  },
+  {
+    "id": "ebooks",
+    "name": "电子书工具",
+    "name_en": "E-books",
+    "group": "learning",
+    "group_name": "教育与科学",
+    "group_name_en": "Education & Science",
+    "query": "topic:ebook"
+  },
+  {
+    "id": "science",
+    "name": "科学计算",
+    "name_en": "Scientific Computing",
+    "group": "learning",
+    "group_name": "教育与科学",
+    "group_name_en": "Education & Science",
+    "query": "topic:scientific-computing"
+  },
+  {
+    "id": "gis",
+    "name": "地理信息系统",
+    "name_en": "GIS",
+    "group": "learning",
+    "group_name": "教育与科学",
+    "group_name_en": "Education & Science",
+    "query": "topic:gis"
+  },
+  {
+    "id": "bioinformatics",
+    "name": "生物信息学",
+    "name_en": "Bioinformatics",
+    "group": "learning",
+    "group_name": "教育与科学",
+    "group_name_en": "Education & Science",
+    "query": "topic:bioinformatics"
+  },
+  {
+    "id": "gamedev",
+    "name": "游戏开发",
+    "name_en": "Game Development",
+    "group": "games",
+    "group_name": "游戏与娱乐",
+    "group_name_en": "Games & Entertainment",
+    "query": "topic:game-development"
+  },
+  {
+    "id": "game-engines",
+    "name": "游戏引擎",
+    "name_en": "Game Engines",
+    "group": "games",
+    "group_name": "游戏与娱乐",
+    "group_name_en": "Games & Entertainment",
+    "query": "topic:game-engine"
+  },
+  {
+    "id": "emulators",
+    "name": "模拟器",
+    "name_en": "Emulators",
+    "group": "games",
+    "group_name": "游戏与娱乐",
+    "group_name_en": "Games & Entertainment",
+    "query": "topic:emulator"
+  },
+  {
+    "id": "media-servers",
+    "name": "媒体服务器",
+    "name_en": "Media Servers",
+    "group": "games",
+    "group_name": "游戏与娱乐",
+    "group_name_en": "Games & Entertainment",
+    "query": "topic:media-server"
   }
 ]
