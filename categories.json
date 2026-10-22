@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ai",
+    "name": "AI 与机器学习",
+    "name_en": "AI & Machine Learning",
+    "query": "topic:machine-learning"
+  },
+  {
+    "id": "llm",
+    "name": "大语言模型",
+    "name_en": "Large Language Models",
+    "query": "topic:large-language-models"
+  },
+  {
+    "id": "devtools",
+    "name": "开发工具",
+    "name_en": "Developer Tools",
+    "query": "topic:developer-tools"
+  },
+  {
+    "id": "web",
+    "name": "Web 开发",
+    "name_en": "Web Development",
+    "query": "topic:web-development"
+  },
+  {
+    "id": "android",
+    "name": "Android 应用",
+    "name_en": "Android Apps",
+    "query": "topic:android"
+  },
+  {
+    "id": "desktop",
+    "name": "桌面软件",
+    "name_en": "Desktop Software",
+    "query": "topic:desktop-app"
+  },
+  {
+    "id": "devops",
+    "name": "运维与云原生",
+    "name_en": "DevOps & Cloud",
+    "query": "topic:devops"
+  },
+  {
+    "id": "security",
+    "name": "网络安全",
+    "name_en": "Cybersecurity",
+    "query": "topic:cybersecurity"
+  },
+  {
+    "id": "automation",
+    "name": "自动化",
+    "name_en": "Automation",
+    "query": "topic:automation"
+  },
+  {
+    "id": "datascience",
+    "name": "数据科学",
+    "name_en": "Data Science",
+    "query": "topic:data-science"
+  },
+  {
+    "id": "quant",
+    "name": "量化与交易",
+    "name_en": "Quant & Trading",
+    "query": "topic:algorithmic-trading"
+  },
+  {
+    "id": "design",
+    "name": "设计与创作",
+    "name_en": "Design & Creative",
+    "query": "topic:design-tools"
+  },
+  {
+    "id": "education",
+    "name": "教育与学习",
+    "name_en": "Education",
+    "query": "topic:education"
+  },
+  {
+    "id": "gamedev",
+    "name": "游戏开发",
+    "name_en": "Game Development",
+    "query": "topic:game-development"
+  },
+  {
+    "id": "selfhosted",
+    "name": "自托管软件",
+    "name_en": "Self-Hosted",
+    "query": "topic:self-hosted"
+  }
+]
